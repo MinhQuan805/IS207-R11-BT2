@@ -99,12 +99,12 @@ h3 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Viền cho bảng mục tiêu */
+/* Viền cho bảng mục tiêu và căn giữa bảng */
 table {
   border-collapse: collapse;
   width: 100%;
-  max-width: 650px;
-  margin: 15px 0;
+  max-width: 750px;
+  margin: 20px auto;
   background-color: #ffffff;
 }
 
@@ -120,10 +120,18 @@ th {
   font-weight: bold;
 }
 
+/* Cột Thời hạn (cột thứ 2): căn giữa và không bị rớt chữ */
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Cột Hoàn thành (cột thứ 3): căn giữa */
 td:last-child,
 th:last-child {
   text-align: center;
-  width: 100px;
+  width: 120px;
 }
 
 /* Form gửi thông tin */
