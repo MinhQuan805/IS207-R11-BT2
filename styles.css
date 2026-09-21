@@ -1,0 +1,189 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* CSS cho toàn bộ thẻ h1, h2, h3, h4 */
+h1,
+h2,
+h3,
+h4 {
+  font-size: 24px;
+  color: #000000;
+  -webkit-text-stroke: 0.5px black;
+  margin: 12px 0 10px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* Phối màu nền cho các tiêu đề */
+h1 {
+  background-color: #caedff;
+}
+
+h2 {
+  background-color: #d8b4f8;
+}
+
+h3 {
+  background-color: #ffc7ea;
+}
+
+/* Canh giữa ảnh đại diện */
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Nav & Footer: background #d4f2f4 và chữ màu #0b0848 */
+.nav-section,
+.footer-section {
+  color: #0b0848;
+  background-color: #d4f2f4;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-section a {
+  color: #0b0848;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-section a:hover {
+  background-color: #bce6e9;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Div 1: Giới thiệu bản thân - background #F3FDE8 */
+.intro-section {
+  background-color: #f3fde8;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Div 2: Gửi thông tin và liên hệ - background ảnh repeat, nội dung căn giữa toàn bộ */
+.contact-section {
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Viền cho bảng mục tiêu */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 650px;
+  margin: 15px 0;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #e2e8f0;
+  font-weight: bold;
+}
+
+td:last-child,
+th:last-child {
+  text-align: center;
+  width: 100px;
+}
+
+/* Form gửi thông tin */
+.contact-form {
+  display: inline-block;
+  text-align: left;
+  max-width: 520px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 25px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control-text {
+  width: 100%;
+  max-width: 320px;
+  padding: 6px 10px;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea.form-control-text {
+  max-width: 100%;
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-group select {
+  padding: 6px 10px;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  padding: 8px 24px;
+  background-color: #0b0848;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1e1a78;
+}

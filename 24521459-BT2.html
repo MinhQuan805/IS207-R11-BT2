@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài tập thực hành 2 - 24521459 - Võ Minh Quân</title>
+  <!-- Liên kết đến file External CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <!-- Menu điều hướng (Nav) -->
+  <nav class="nav-section">
+    <a href="#gioi-thieu">Giới thiệu bản thân</a>
+    <a href="#gui-thong-tin">Gửi thông tin và liên hệ cùng tôi</a>
+  </nav>
+
+  <!-- Phần 1: Giới thiệu bản thân -->
+  <div class="intro-section" id="gioi-thieu">
+    <h1>Giới thiệu bản thân</h1>
+
+    <img class="avatar"
+      src="https://www.uit.edu.vn/_next/image?url=%2Fmedia%2F740215593_1000874972575871_5368889140275719740_n_1_ca47231baf.jpg&w=1536&q=75"
+      alt="Ảnh đại diện của Võ Minh Quân" width="150" height="150" />
+
+    <div>
+      <h2>Thông tin cơ bản</h2>
+      <ul>
+        <li><strong>Họ và tên:</strong> Võ Minh Quân</li>
+        <li><strong>MSSV:</strong> 24521459</li>
+        <li><strong>Năm sinh:</strong> 2006</li>
+        <li><strong>Chuyên ngành:</strong> Hệ thống thông tin</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Sở thích</h2>
+
+      <h3>Món ăn</h3>
+      <ol>
+        <li>Quả na</li>
+        <li>Canh rau ngót</li>
+        <li>Bánh đường dừa</li>
+      </ol>
+
+      <h3>Giải trí</h3>
+
+      <h4>Trò chơi</h4>
+      <ul>
+        <li>Overwatch</li>
+        <li>Đá bóng</li>
+        <li>Đá cầu</li>
+      </ul>
+
+      <h4>Bài nhạc yêu thích</h4>
+      <ul>
+        <li>Thanh Xuân</li>
+        <li>Gác lại âu lo</li>
+        <li>Bầu trời mới</li>
+      </ul>
+    </div>
+
+    <!-- Mục: Mục tiêu của bản thân -->
+    <div>
+      <h2>Mục tiêu của bản thân</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mục tiêu</th>
+            <th>Thời hạn</th>
+            <th>Hoàn thành</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Đạt điểm A môn Phát triển ứng dụng Web (IS207)</td>
+            <td>12/2026</td>
+            <td><input type="checkbox" checked /></td>
+          </tr>
+          <tr>
+            <td>Đạt chứng chỉ ngoại ngữ IELTS 7.0</td>
+            <td>10/2027</td>
+            <td><input type="checkbox" /></td>
+          </tr>
+          <tr>
+            <td>Tốt nghiệp Đại học UIT loại Giỏi chuyên ngành Hệ thống thông tin</td>
+            <td>06/2028</td>
+            <td><input type="checkbox" /></td>
+          </tr>
+          <tr>
+            <td>Trở thành lập trình viên Web Fullstack chuyên nghiệp</td>
+            <td>12/2028</td>
+            <td><input type="checkbox" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Phần 2: Gửi thông tin và giao lưu cùng tôi -->
+  <div class="contact-section" id="gui-thong-tin">
+    <h2>Gửi thông tin và giao lưu cùng tôi</h2>
+
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="fullname">Họ và tên:</label><br />
+        <input type="text" id="fullname" name="fullname" class="form-control-text" placeholder="Nhập họ và tên của bạn"
+          required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" class="form-control-text" placeholder="example@gmail.com"
+          required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Tin nhắn:</label><br />
+        <textarea id="message" name="message" class="form-control-text" rows="4"
+          placeholder="Viết lời nhắn gửi đến mình..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Giới tính:</label><br />
+        <input type="radio" id="gender-male" name="gender" value="Nam" checked />
+        <label for="gender-male">Nam</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" id="gender-female" name="gender" value="Nữ" />
+        <label for="gender-female">Nữ</label>
+      </div>
+
+      <div class="form-group">
+        <label>Sở thích:</label><br />
+        <input type="checkbox" id="hobby-music" name="hobby" value="Nghe nhạc" checked />
+        <label for="hobby-music">Nghe nhạc</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="hobby-football" name="hobby" value="Đá bóng" checked />
+        <label for="hobby-football">Đá bóng</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="hobby-game" name="hobby" value="Chơi game" />
+        <label for="hobby-game">Chơi game</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" id="hobby-travel" name="hobby" value="Du lịch" />
+        <label for="hobby-travel">Du lịch</label>
+      </div>
+
+      <div class="form-group">
+        <label for="major">Ngành học quan tâm:</label><br />
+        <select id="major" name="major">
+          <option value="Hệ thống thông tin" selected>Hệ thống thông tin</option>
+          <option value="Khoa học Máy tính">Khoa học Máy tính</option>
+          <option value="Kỹ thuật phần mềm">Kỹ thuật phần mềm</option>
+          <option value="Kỹ thuật máy tính">Kỹ thuật máy tính</option>
+          <option value="Mạng máy tính & Truyền thông">Mạng máy tính & Truyền thông</option>
+          <option value="An toàn thông tin">An toàn thông tin</option>
+          <option value="Thương mại điện tử">Thương mại điện tử</option>
+          <option value="Khoa học dữ liệu">Khoa học dữ liệu</option>
+        </select>
+      </div>
+
+      <div class="form-group" style="margin-top: 20px; text-align: center;">
+        <input type="submit" value="Gửi thông tin" class="btn-submit" />
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <p>@2024 24521459 Võ Minh Quân</p>
+  </footer>
+</body>
+
+</html>
